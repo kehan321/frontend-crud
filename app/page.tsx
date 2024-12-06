@@ -26,7 +26,7 @@ export default function Home() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/users");
+      const response = await axios.get("http://localhost:5000");
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);

@@ -45,7 +45,7 @@ export default function Home() {
     }
 
     try {
-      await axios.post("http://localhost:5000/users", formData, {
+      await axios.post("http://localhost:5000", formData, {
         headers: {
           "Content-Type": "multipart/form-data", // Important for file uploads
         },
